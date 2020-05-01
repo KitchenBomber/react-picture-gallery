@@ -1,8 +1,39 @@
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList';
+
 
 class App extends Component {
+
+state ={
+  pictures : []
+}
+
+  componentDidMount(){
+    console.log('app loaded');
+    //GET REQUEST
+    this.getPictures();
+  }
+
+getPictures = () => {
+  console.log('in getPictures');
+    axios({
+      url: '/pictures',
+      method: 'GET'
+    }).then ( (response) => {
+      console.log(response.data);
+      this.setState({
+        pictures: response.data
+      }).catch((err) => {
+        console.log(err);
+      })
+    })
+}//GET request
+
+
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
@@ -10,6 +41,7 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
+        <GalleryList />
         <img src="images/goat_small.jpg"/>
       </div>
     );

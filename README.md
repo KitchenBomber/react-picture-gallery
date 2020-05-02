@@ -14,14 +14,14 @@ CHECKLIST:
 [] Add Images to public/images
 [x]npm install
 [x]npm run client and npm run sever
-[]set up Axios GET to get the data
+[x]set up Axios GET to get the data
 []create App
     []necessary dependencies
-[]create GalleryList
+[x]create GalleryList
     []necessary dependencies
-    []iterate the gallery data
+    []iterate the gallery data coming back up from GalleryItem
     []display on screen
-[]create GalleryItem.js
+[x]create GalleryItem.js
     []necessary dependencies
     []functional buttons
         []state that stores each pictures likes

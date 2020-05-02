@@ -10,7 +10,7 @@ class GalleryList extends Component {
         return (
             <div>
                 <span>
-                    {pictures.map((picture) => <GalleryItem picture={picture} />)}
+                    {pictures.map((picture) => <GalleryItem picture={picture} likedPhoto={this.props.likedPhoto}/>)}
                 </span>
 
             </div>

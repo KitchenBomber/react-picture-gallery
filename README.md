@@ -10,23 +10,24 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 CHECKLIST:
 
-[] Review the provided code
-[] Add Images to public/images
+[x] Review the provided code
+[x] Add Images to public/images
 [x]npm install
 [x]npm run client and npm run sever
 [x]set up Axios GET to get the data
-[]create App
-    []necessary dependencies
+[x]create App
+    [x]necessary dependencies
+    [x]add likes button
+        [] make it work
 [x]create GalleryList
-    []necessary dependencies
-    []iterate the gallery data coming back up from GalleryItem
-    []display on screen
+    [x]necessary dependencies
+    [x]iterate the gallery data coming back up from GalleryItem
+    [x]display on screen
 [x]create GalleryItem.js
-    []necessary dependencies
+    [x]necessary dependencies
     []functional buttons
-        []state that stores each pictures likes
     []conditional rendering for pictures
-    []connect to GalleryList
+    [x]connect to GalleryList
 
 
 

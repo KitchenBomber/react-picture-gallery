@@ -29,6 +29,11 @@ class App extends Component {
       })
   }//GET request
 
+likedPhoto = (picture) => {
+  console.log("i like you too", picture);
+  picture.likes += 1;
+
+}
 
   render() {
 
@@ -38,10 +43,9 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        
-        <p>{JSON.stringify(this.state)}</p>
+     
         <div>
-          <GalleryList pictures={(this.state.pictures)} />
+          <GalleryList pictures={(this.state.pictures)} likedPhoto={this.likedPhoto}/>
         </div>
       </div>
     );//end return

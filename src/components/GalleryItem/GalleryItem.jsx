@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 
 
 class GalleryItem extends Component{
+
+    
     render(){
         const picture = this.props.picture;
         console.log('In GalleryItem', picture);
@@ -14,7 +16,7 @@ class GalleryItem extends Component{
                 <img key={picture.id} src={picture.path} alt={picture.description}></img>
                 <div>
                     <h4>{picture.likes} people loved this photo</h4>
-                    <button>I LOVE IT!</button>
+                    <button onClick={ () => this.props.likedPhoto(picture)}>I LOVE IT!</button>
                 </div>
 
             </div>

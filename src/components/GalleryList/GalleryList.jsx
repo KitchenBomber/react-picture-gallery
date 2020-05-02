@@ -9,8 +9,6 @@ class GalleryList extends Component {
         console.log('In GalleryList');
         return (
             <div>
-                <h1>Hi From GalleryList</h1>
-                <h2>TEST: {JSON.stringify(pictures)}</h2>
                 <span>
                     {pictures.map((picture) => <GalleryItem picture={picture} />)}
                 </span>

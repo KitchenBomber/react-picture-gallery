@@ -10,10 +10,15 @@ class GalleryItem extends Component{
         const picture = this.props.picture;
         console.log('In GalleryItem', picture);
         return(
-            <>
-            <h1>Hi From GalleryItem</h1>
-            <h2>{JSON.stringify(picture.path)}</h2>
-            </>
+            <div>
+                <img key={picture.id} src={picture.path} alt={picture.description}></img>
+                <div>
+                    <h4>{picture.likes} people loved this photo</h4>
+                    <button>I LOVE IT!</button>
+                </div>
+
+            </div>
+            
         )
     }
 }

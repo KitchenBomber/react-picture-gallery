@@ -29,10 +29,17 @@ class App extends Component {
       })
   }//GET request
 
-likedPhoto = (picture) => {
-  console.log("i like you too", picture);
-  picture.likes += 1;
 
+  //this needs to be the PUT route
+likedPhoto = (picture) => {
+  console.log("i like you too", picture.id);
+  //axios call goes here
+  axios.put(`/gallery/like/${picture.id}`)
+  .then(response => {
+    this.getPictures()
+  }).catch(error => {
+    console.log('Error tabulating Likes', error);
+    })
 }
 
   render() {

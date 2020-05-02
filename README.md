@@ -18,16 +18,18 @@ CHECKLIST:
 [x]create App
     [x]necessary dependencies
     [x]add likes button
-        [] make it work
+        [x] make it work
 [x]create GalleryList
     [x]necessary dependencies
     [x]iterate the gallery data coming back up from GalleryItem
     [x]display on screen
 [x]create GalleryItem.js
     [x]necessary dependencies
-    []functional buttons
+    [x]functional buttons
     []conditional rendering for pictures
     [x]connect to GalleryList
+[]fix the layout
+
 
 
 

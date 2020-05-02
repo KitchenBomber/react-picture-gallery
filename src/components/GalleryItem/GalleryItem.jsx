@@ -12,6 +12,7 @@ class GalleryItem extends Component{
         const picture = this.props.picture;
         console.log('In GalleryItem', picture);
         return(
+            <span>
             <div>
                 <img key={picture.id} src={picture.path} alt={picture.description}></img>
                 <div>
@@ -20,7 +21,7 @@ class GalleryItem extends Component{
                 </div>
 
             </div>
-            
+            </span>
         )
     }
 }

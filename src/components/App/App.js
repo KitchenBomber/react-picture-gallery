@@ -18,17 +18,14 @@ state ={
 
 getPictures = () => {
   console.log('in getPictures');
-    axios({
-      url: '/pictures',
-      method: 'GET'
-    }).then ( (response) => {
+  axios.get('/gallery')
+      .then ( (response) => {
       console.log(response.data);
       this.setState({
         pictures: response.data
-      }).catch((err) => {
+      })}).catch((err) => {
         console.log(err);
       })
-    })
 }//GET request
 
 
@@ -41,6 +38,7 @@ getPictures = () => {
         </header>
         <br/>
         <p>Gallery goes here</p>
+        // <p>{JSON.stringify( this.state )}</p> making sure the state was loading as expected.
         <GalleryList />
         <img src="images/goat_small.jpg"/>
       </div>

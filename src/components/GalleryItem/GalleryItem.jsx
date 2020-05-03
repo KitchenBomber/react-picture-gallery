@@ -20,32 +20,32 @@ class GalleryItem extends Component {
 
 
 
-render(){
-    const picture = this.props.picture;
-    // console.log('In GalleryItem', picture);
+    render() {
+        const picture = this.props.picture;
+        // console.log('In GalleryItem', picture);
 
-    let imageOrText = <img src={picture.path} alt={picture.description} onClick={this.handleClick}></img>
+        let imageOrText = <img src={picture.path} alt={picture.description} onClick={this.handleClick}></img>
 
-    if (this.state.flipped) {
-        imageOrText = (
-            <p onClick={this.handleClick}>{picture.description}</p>
+        if (this.state.flipped) {
+            imageOrText = (
+                <p onClick={this.handleClick}>{picture.description}</p>
+            )
+        }
+
+        return (
+
+            <span className="galleryItem">
+                <div className="galleryItem-top">
+                    {imageOrText}
+                </div>
+                <div className="galleryItem-bottom">
+                    <button onClick={() => this.props.likedPhoto(picture)}>I LOVE IT!</button>
+                    <h4>{picture.likes} people loved this photo</h4>
+                </div>
+            </span>
+
         )
     }
-
-    return (
-        <span>
-            <div>
-
-                <div>
-                    {imageOrText}
-                    <h4>{picture.likes} people loved this photo</h4>
-                    <button onClick={() => this.props.likedPhoto(picture)}>I LOVE IT!</button>
-                </div>
-
-            </div>
-        </span>
-    )
-}
 }
 // gallery item needs a button and needs to call one image out of the array.
 

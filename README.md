@@ -26,7 +26,7 @@ CHECKLIST:
 [x]create GalleryItem.js
     [x]necessary dependencies
     [x]functional buttons
-    []conditional rendering for pictures
+    [x]conditional rendering for pictures
     [x]connect to GalleryList
 [] fix the layout
 [] add a bunch of comment text

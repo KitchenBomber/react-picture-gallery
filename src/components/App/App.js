@@ -50,8 +50,7 @@ likedPhoto = (picture) => {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-     
-        <div>
+        <div className="galleryWall">
           <GalleryList pictures={(this.state.pictures)} likedPhoto={this.likedPhoto}/>
         </div>
       </div>

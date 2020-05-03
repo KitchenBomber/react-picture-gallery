@@ -5,7 +5,7 @@ class GalleryList extends Component {
     render() {
         const pictures = this.props.pictures;
         //created variable of what's coming from the property
-        console.log(pictures);
+        // console.log(pictures);
         console.log('In GalleryList');
         return (
             <div>

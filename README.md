@@ -28,7 +28,7 @@ CHECKLIST:
     [x]functional buttons
     [x]conditional rendering for pictures
     [x]connect to GalleryList
-[] fix the layout
+[x] fix the layout
 [] add a bunch of comment text
 [] update the read me
 

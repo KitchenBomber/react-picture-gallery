@@ -28,7 +28,10 @@ class GalleryItem extends Component {
 
         if (this.state.flipped) {
             imageOrText = (
+                <div>
+                <br></br>
                 <p onClick={this.handleClick}>{picture.description}</p>
+                </div>
             )
         }
 
@@ -39,8 +42,9 @@ class GalleryItem extends Component {
                     {imageOrText}
                 </div>
                 <div className="galleryItem-bottom">
+                    <br></br>
                     <button onClick={() => this.props.likedPhoto(picture)}>I LOVE IT!</button>
-                    <h4>{picture.likes} people loved this photo</h4>
+                    <p>{picture.likes} people loved this photo</p>
                 </div>
             </span>
 

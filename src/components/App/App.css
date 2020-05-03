@@ -42,7 +42,6 @@
 .galleryItem-top{
   width: 133px;
   height: 133px;
-  vertical-align: middle;
   box-shadow: 5px 10px rgb(204, 209, 214);
   border-style:solid;
   border-width: 1px;
@@ -53,7 +52,7 @@
 
 button{
 box-shadow: 2px 4px rgb(204, 209, 214);
-
+border-color: black;
 }
 
 .galleryItem-bottom{

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
-
+//GalleryList is where our image component GalleryItem is organized on the DOM
 
 class App extends Component {
 

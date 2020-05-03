@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
-//will need a handleChange or handle Click here
-
-//will need a state here to store the number of times the button has been clicked
-
+//GalleryItem is where individual "image packages" are assembled and returned ot GalleryList
 
 class GalleryItem extends Component {
     state = {
@@ -14,7 +11,7 @@ class GalleryItem extends Component {
         this.setState({
             flipped: !this.state.flipped
         })
-    }
+    }// end click handler for the button that is the picture itself
 
 
 
@@ -33,7 +30,7 @@ class GalleryItem extends Component {
                 <p onClick={this.handleClick}>{picture.description}</p>
                 </div>
             )
-        }
+        }//end conditional, this is where the image displays either picture or text depending on state of "flipped"
 
         return (
 
@@ -48,9 +45,9 @@ class GalleryItem extends Component {
                 </div>
             </span>
 
-        )
-    }
-}
-// gallery item needs a button and needs to call one image out of the array.
+        )//end return
+    }//end render
+}//end component
+// galleryItem-bottom button is for adding Likes.
 
 export default GalleryItem

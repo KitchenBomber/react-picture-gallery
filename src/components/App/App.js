@@ -20,7 +20,7 @@ class App extends Component {
     console.log('in getPictures');
     axios.get('/gallery')
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         this.setState({
           pictures: response.data
         })
